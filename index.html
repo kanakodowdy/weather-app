@@ -19,7 +19,17 @@
   <body>
     <div class="container">
       <div class="card-body">
-        <h1 id="city">New York</h1>
+        <form id="search-form" class="mb-3">
+          <input
+            type="text"
+            placeholder="Type a city..."
+            id="searchInput"
+            autocomplete="off"
+          />
+          <input type="submit" value="Search" />
+          <button>Current Location</button>
+        </form>
+        <h1 id="city"></h1>
         <ul>
           <li id="date"></li>
           <li id="description"></li>
