@@ -1,0 +1,15 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-body {
+  max-width: 600px;
+  margin: 30px auto;
+  border: 1px solid;
+  border-color: mediumaquamarine;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
