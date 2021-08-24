@@ -19,27 +19,32 @@
   <body>
     <div class="container">
       <div class="card-body">
-        <form id="search-form" class="mb-3">
-          <input
-            type="text"
-            placeholder="Type a city..."
-            id="searchInput"
-            autocomplete="off"
-          />
-          <input type="submit" value="Search" />
-          <button>Current Location</button>
-        </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li id="date"></li>
-          <li id="description"></li>
-        </ul>
+        <div class="row">
+          <div class="col-6 mt-2 px-5">
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="col-6 mt-4 px-1">
+            <form id="search-form">
+              <input
+                type="text"
+                placeholder="  Type a city..."
+                id="searchInput"
+                autocomplete="off"
+              />
+              <input type="submit" value="Search" />
+            </form>
+          </div>
+        </div>
         <div class="row">
           <div class="col-6">
             <img src="" alt="" id="icon" />
             <span id="temp">12</span>°C / F°
           </div>
-          <div class="col-6">
+          <div class="col-6 mt-4">
             <ul>
               <li id="humidity"></li>
               <li id="wind"></li>
