@@ -36,13 +36,20 @@ function displayTemperature(response) {
   humidityElement.innerHTML = `Humidity : ${humidity}%`;
   let windElement = document.querySelector("#wind");
   wind = Math.round(response.data.wind.speed);
-  windElement.innerHTML = `Wind : ${wind}Km/h`;
+  windElement.innerHTML = `Wind : ${wind}km/h`;
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey = "7e9cd1252a8ce0c8d0de0776fa7e9fac";
+let city = "Paris";
 let unit = "metric";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=${unit}`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
 
 axios.get(apiUrl).then(displayTemperature);
