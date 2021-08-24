@@ -12,5 +12,8 @@ body {
 
 ul {
   list-style: none;
+}
+
+li:first-letter {
   text-transform: capitalize;
 }
