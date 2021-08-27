@@ -22,3 +22,16 @@ ul {
 li:first-letter {
   text-transform: capitalize;
 }
+
+.weather-forecast {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
