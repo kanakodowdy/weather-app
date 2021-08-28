@@ -1,17 +1,18 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #393e46;
 }
 
 p {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .card-body {
   max-width: 600px;
   margin: 30px auto;
-  border: 1px solid;
-  border-color: mediumaquamarine;
+  border: 3px solid;
+  border-color: #35d0ba;
   border-radius: 10px;
 }
 
@@ -34,4 +35,8 @@ li:first-letter {
 
 .weather-forecast-temperature-min {
   opacity: 0.6;
+}
+
+#temp {
+  font-size: 45px;
 }
